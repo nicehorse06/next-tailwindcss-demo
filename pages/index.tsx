@@ -24,7 +24,7 @@ export default class Home extends React.Component {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet" />
         </Head>
-        <main className="flex flex-col items-center w-full flex-1 bg-[url('/background-img-1.png')] bg-no-repeat bg-center">
+        <main className="flex flex-col items-center w-full flex-1 bg-[url('/background-img-1.png')] bg-no-repeat" style={{backgroundPosition: '31% 0%',}}>
           <nav className="bg-white w-[1200px] h-[100px] mt-[40px] rounded-full overflow-hidden text-center ">
             <div className="container flex flex-wrap flex-col justify-end items-center mx-auto h-full">
               <a className="flex h-full pl-[50px] py-[20px] w-2/12" href="#">
