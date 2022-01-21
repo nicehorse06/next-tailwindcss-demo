@@ -1,5 +1,6 @@
 # Next.js + Tailwind CSS Example
 
+## 執行方式
 * npm run dev
 
 ## intro
