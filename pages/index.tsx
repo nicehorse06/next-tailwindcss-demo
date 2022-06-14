@@ -1,19 +1,15 @@
 import React from 'react';
 import Head from 'next/head'
 
-function NavItem(content: string) {
-  return (
-    <div className="w-[11%]">
-      <a href="#" className="block text-[14px] font-thin">{content}</a>
-    </div>
-  );
-}
-
 export default class Home extends React.Component {
   nav_list = ['サービス概要', '機能紹介', 'プラン', 'お知らせ']
 
   render() {
-    let nav_items = this.nav_list.map((this_string) => NavItem(this_string))
+    let nav_items = this.nav_list.map((this_string) => 
+      <div className="w-[11%]" key="{this_string}">
+        <a href="#" className="block text-[14px] font-thin">{this_string}</a>
+      </div>
+    )
 
     return (
       <div className="flex flex-col min-h-screen">
